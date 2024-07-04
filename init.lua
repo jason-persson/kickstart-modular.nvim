@@ -98,6 +98,15 @@ if vim.g.neovide then
   vim.o.guifont = 'FiraCode Nerd Font:h10'
 end
 
+-- Spelling because I'm terrible at it
+vim.o.spelllang = 'en_au'
+vim.cmd [[
+  augroup SpellCheck
+    autocmd!
+    autocmd FileType markdown,text setlocal spell
+  augroup end
+]]
+
 -- [[ Setting options ]]
 require 'options'
 
