@@ -93,6 +93,16 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+-- Space instead of tabs
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+
+vim.o.expandtab = true -- Actually set spaces instead of tabs
+
+vim.o.autoindent = true
+vim.o.smartindent = true
+
 -- Neovide stuff
 if vim.g.neovide then
   vim.o.guifont = 'FiraCode Nerd Font:h10'
